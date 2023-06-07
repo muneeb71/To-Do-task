@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+  background-image: url('./assets/todo.jpeg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.inp_field{
+  width: 400px;
+  border: 1px solid #cfd4d1;
+  background: #dae0db;
+  opacity: 0.4;
+  padding: 22px 48px;
+  border-radius: 6px;
+  box-shadow: -3px 0px 12px -1px rgba(0,0,0,0.62);
+-webkit-box-shadow: -3px 0px 12px -1px rgba(0,0,0,0.62);
+-moz-box-shadow: -3px 0px 12px -1px rgba(0,0,0,0.62);
+font-size: 18px;
+color: #000
+}
+.inp_field:focus {
+  outline: none;
+  border-color: #6c757d;
+  box-shadow: 0 0 8px rgba(108, 117, 125, 0.5);
+  background: linear-gradient(to right, #fff, #f8f9fa);
+  opacity: 1;
+}
+
+.inp_field::placeholder {
+  color: #999;
+}
+
+.inp_field::-webkit-input-placeholder {
+  color: #999;
+}
+
+.inp_field::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.inp_field:-ms-input-placeholder {
+  color: #999;
+}
+
+.inp_field:-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+
+
+
+.icon_bar{
+  position: absolute;
+  left: 533px;
+  width: 30px;
+  height: 25px;
+  
+  margin-top: 20px;
+}
+.task-icon {
+  background-color: gray;
+  color: white;
+  padding: 8px;
+  border-radius: 40px;
+  margin-top: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.task-icon:hover {
+  background-color: #a8662c;
+}
+.icon_arrow{
+  position: absolute;
+  right: 533px;
+  width: 30px;
+  height: 25px;
+  margin-top: 20px;
+}
+.items {
+  display: flex !important;
+  justify-content: space-between;
+  background-color: #ebedeb;
+ 
+  width: 465px;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border-bottom: 1px solid gray;
+  transition: background-color 0.3s ease;
+}
+.items:hover {
+  background-color: #dcdcdc;
+}
+
+.items_icon{
+  background-color: "#a8662c";
+  color: white;
+  padding: 8px;
+  border-radius: '50%';
+  margin-top: 16
+}
+
+.icon_arrow:hover,
+.icon_bar:hover {
+  color: #a8662c;
+}
+
+
+/* .class-assignment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  padding: 5px;
+}
+
+.assign-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.assign-button:hover {
+  background-color: #0056b3;
+} */

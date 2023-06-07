@@ -4,13 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
+require('dotenv').config();
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
 var app = express();
 var mongoose = require('mongoose');
-const connection = mongoose.connect('mongodb://localhost:27017/todo');
+console.log(process.env.DB_URL);
+const connection = mongoose.connect(process.env.DB_URL);
 
 connection.then(db => {
   console.log("Database Connected!");
